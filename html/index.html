@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title> João Roiek </title>
+</head>
+<body>
+    <header>
+        <div class="logo"> João Roiek Fotógrafo </div>
+        <nav>
+            <ul> <!-- Quero colocar um ícone interativo, que se mexa, brilhe ou algo assim, para cada opção do header-->
+                <li><a href="portfolio.html"></a> PORTFÓLIO </li>
+                <li><a href="about.html"></a> SOBRE MIM </li>
+                <li><a href="pacotes.html"></a> PACOTES </li>
+                <li><a href="socialmedia.html"></a> CONTATO </li>
+            </ul>
+        </nav>
+    </header> 
+
+
+    <!-- HERO SECTION (MELHOR LUGAR DA PÁGINA PRINCIPAL, A PARTE MAIS IMPORTANTE!)-->   
+    <section class="hero"> 
+        <div class="cta">
+            <h1> Capturando o MELHOR de você! </h1>
+            <a href="portfolio.html" class="button"> Conheça o artista </a>
+        </div>
+    </section>
+    <!-- PORTFOLIO PREVIEW -->
+     <section id="portfolio">
+        <h2> Portfólio Destaque </h2>
+        <div class="galeria">
+            <img src="../imagens/foto 1.jpg" alt="FOTO 1">
+            <img src="../imagens/foto 2.jpg" alt="FOTO 2">
+            <img src="../imagens/foto 3.jpg" alt="FOTO 3">
+            <img src="../imagens/foto 4.jpg" alt="FOTO 4">
+        </div>
+     </section>
+
+     <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contact">
+        <h2> Entre em Contato </h2>
+        <form>
+            <input type="text" placeholder="Nome Completo"> 
+            <input type="email" placeholder="Seu EMAIL"> <!-- o email pouco me imnporta na realidade. Gostaria que tivesse a opção de email mas também a opção de contato via whatsapp -->
+            <textarea placeholder="Me conte um pouco do seu projeto!" required></textarea> <!-- O que é este required? Qual seria a diferença se ele não estivesse aí?-->
+            <button type="submit"> Enviar </button>
+        </form>
+    </section>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>
