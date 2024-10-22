@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos e Fontes -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/style.css">
-    <title> João Roiek </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+
+    <title>João Roiek Fotógrafo</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-        <div class="logo"> João Roiek Fotógrafo </div>
+        <div class="logo">João Roiek Fotógrafo</div>
         <nav>
-            <ul> <!-- Quero colocar um ícone interativo, que se mexa, brilhe ou algo assim, para cada opção do header-->
-                <li><a href="./src/html/portfolio.html"></a> PORTFÓLIO </li>
-                <li><a href="./src/html/about.html"></a> SOBRE MIM </li>
-                <li><a href="./src/html/packages.html"></a> PACOTES </li>
-                <li><a href="./src/html/socialmedia.html"></a> CONTATO </li>
+            <ul>
+                <!-- Ícones interativos com animação ao passar o mouse -->
+                <li><a href="./src/html/portfolio.html"><i class="fas fa-camera-retro"></i> PORTFÓLIO</a></li>
+                <li><a href="./src/html/about.html"><i class="fas fa-user"></i> SOBRE MIM</a></li>
+                <li><a href="./src/html/packages.html"><i class="fas fa-gift"></i> PACOTES</a></li>
+                <li><a href="./src/html/socialmedia.html"><i class="fas fa-envelope"></i> CONTATO</a></li>
             </ul>
         </nav>
     </header> 
 
-
-    <!-- HERO SECTION (MELHOR LUGAR DA PÁGINA PRINCIPAL, A PARTE MAIS IMPORTANTE!)-->   
+    <!-- HERO SECTION -->
     <section class="hero"> 
-        <div class="cta">
-            <h1> Capturando o MELHOR de você! </h1>
-            <a href="./src/html/portfolio.html" class="button"> Conheça o artista </a>
+        <div class="cta" data-aos="fade-up">
+            <h1>Capturando o MELHOR de você!</h1>
+            <a href="./src/html/portfolio.html" class="button">Conheça o artista</a>
         </div>
     </section>
-    <!-- PORTFOLIO PREVIEW -->
-     <section id="portfolio">
-        <h2> Portfólio Destaque </h2>
-        <div class="galeria">
-            <img src="./src/pics/foto 1.jpg" alt="FOTO 1">
-            <img src="./src/pics/foto 2.jpg" alt="FOTO 2">
-            <img src="./src/pics/foto 3.jpg" alt="FOTO 3">
-            <img src="./src/pics/foto 4.jpg" alt="FOTO 4">
-        </div>
-     </section>
 
-     <!-- FORMULÁRIO DE CONTATO -->
+    <!-- PORTFOLIO PREVIEW -->
+    <section id="portfolio">
+        <h2 data-aos="fade-up">Portfólio Destaque</h2>
+        <div class="galeria" data-aos="fade-up">
+            <a href="./src/pics/foto1.jpg" data-lightbox="portfolio"><img src="./src/pics/foto1.jpg" alt="FOTO 1"></a>
+            <a href="./src/pics/foto2.jpg" data-lightbox="portfolio"><img src="./src/pics/foto2.jpg" alt="FOTO 2"></a>
+            <a href="./src/pics/foto3.jpg" data-lightbox="portfolio"><img src="./src/pics/foto3.jpg" alt="FOTO 3"></a>
+            <a href="./src/pics/foto4.jpg" data-lightbox="portfolio"><img src="./src/pics/foto4.jpg" alt="FOTO 4"></a>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
     <section id="contact">
-        <h2> Entre em Contato </h2>
+        <h2>Entre em Contato</h2>
         <form>
-            <input type="text" placeholder="Nome Completo"> 
-            <input type="email" placeholder="Seu EMAIL"> <!-- o email pouco me imnporta na realidade. Gostaria que tivesse a opção de email mas também a opção de contato via whatsapp -->
-            <textarea placeholder="Me conte um pouco do seu projeto!" required></textarea> <!-- O que é este required? Qual seria a diferença se ele não estivesse aí?-->
-            <button type="submit"> Enviar </button>
+            <input type="text" placeholder="Nome Completo" required> 
+            <input type="email" placeholder="Seu EMAIL"> 
+            <input type="tel" placeholder="WhatsApp (opcional)">
+            <textarea placeholder="Me conte um pouco do seu projeto!" required></textarea> 
+            <button type="submit">Enviar</button>
         </form>
     </section>
 
